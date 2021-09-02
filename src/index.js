@@ -24,7 +24,7 @@ const renderTop10Customers = customerObj => {
 /* Fetch Functions */
 
 const getOneCustomer = id => {
-    fetch(`http://localhost:3000/api/v1/customers/`)
+    fetch(`http://localhost:3000/api/v1/customers`)
         .then(r => r.json())
         .then(customerObj => {
             console.log(customerObj)
